@@ -5,6 +5,7 @@ provider "aws" {
     secret_key = "xdARnJ6hqhFTdiN99vcm09eT6PtwlMtkeakTFPal"
 }
 
+
 #Resource Block
 resource "aws_instance" "myec2" {
     ami =  "ami-078a289ddf4b09ae0"

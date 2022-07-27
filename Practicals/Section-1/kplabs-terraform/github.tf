@@ -8,7 +8,7 @@
 }
 
 provider "github" {
-  token = "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"
+  token = "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"
 }
 
 resource "github_repository" "example" {

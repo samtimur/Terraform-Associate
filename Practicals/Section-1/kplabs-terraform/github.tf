@@ -1,4 +1,4 @@
- terraform {
+  terraform {
   required_providers {
     github = {
       source = "integrations/github"
@@ -8,7 +8,7 @@
 }
 
 provider "github" {
-  token = "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"
+  token = "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"
 }
 
 resource "github_repository" "example" {

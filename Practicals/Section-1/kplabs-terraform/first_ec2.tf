@@ -1,8 +1,8 @@
 #Proider Block
 provider "aws" {
     region = "eu-west-2"
-    access_key = "AKIAZ53ZT7YGQC4YPLOB"
-    secret_key = "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"
+    access_key = "AKIAS3O5V7MIP5ZM3RX4"
+    secret_key = "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"
 }
 
 

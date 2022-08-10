@@ -1,0 +1,30 @@
+provider "aws" {
+    region = "eu-west-2"
+    access_key = "AKIAZ53ZT7YGVJPQUAZ2"
+    secret_key = "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"
+}
+
+resource "aws_security_group" "var_demo" {
+  name = "kplabs-variables"
+
+  ingress {
+    from_port = 443
+    to_port = 443
+    protocol = "tcp"
+    cidr_blocks = [var.vpn_ip]
+  }
+
+  ingress {
+    from_port = 80
+    to_port = 80
+    protocol = "tcp"
+    cidr_blocks = [var.vpn_ip]
+  }
+
+  ingress {
+    from_port = 20
+    to_port = 20
+    protocol = "tcp"
+    cidr_blocks = [var.vpn_ip]
+  }
+} 

@@ -1,0 +1,27 @@
+provider "aws" {
+    region = "eu-west-2"
+    access_key = "AKIAZ53ZT7YGVJPQUAZ2"
+    secret_key = "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"
+}
+
+resource "aws_eip" "lb" {
+    vpc = true  
+}
+
+output "aws_eip" {
+    value = aws_eip.lb
+}
+
+resource "aws_s3_bucket" "mys3" {
+  bucket = "attributes-demo-muza"
+}
+
+output "mys3bucket" {
+    value = aws_s3_bucket.mys3
+}
+
+/*
+output = "<Name of the output>" {
+    value = <resource_block>.<resource_block's_given_name>.<attribute_to_output>
+}
+*/
